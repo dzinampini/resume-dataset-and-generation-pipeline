@@ -1,7 +1,7 @@
 # Resume Dataset Generation Pipeline
 This repository documents a complete workflow for enhancing and structuring resume data. It starts with raw PDF files (specifically a subset of the Annotated NER PDF Resumes dataset) and generates a highly detailed, machine-readable JSON array suitable for advanced data analysis or machine learning applications.
 
-This process was used to create a structured dataset of 939 resumes.
+The pdf files were obtained from [Mehyaar/Annotated_NER_PDF_Resumes](https://huggingface.co/datasets/Mehyaar/Annotated_NER_PDF_Resumes/tree/main) This process was used to create a structured dataset of only 939 resumes from this dataset. 
 
 ## Option 1: Just get the final dataset
 For users who only require the final output, the complete dataset is available here:
@@ -21,16 +21,9 @@ pip install pdfplumber pytesseract Pillow tqdm openai python-dotenv pymupdf shut
 ```
 
 3. Project Structure
-Before starting, ensure your main directory is organized as follows. Create a file named .env in the root folder to securely store your OpenAI API key.
-
-/resume-parser-project
-├── .env                  <-- Contains OPENAI_API_KEY="sk-..."
-├── pdfs/                 <-- INPUT: Place all your source PDF resumes here
-├── 1.read_pdf_text.py
-├── 2.cv_parser.py
-├── 3.merge_json_files.py
-├── 4.copy_pdfs.py
-└── 5.aggregate_data.py
+Before starting, ensure you have added the following files in your main directory
+.env        <-- Contains OPENAI_API_KEY="sk-..."
+pdfs/       <-- INPUT: Place all your source PDF resumes here
 
 
 ### The 5-Step Data Processing Pipeline

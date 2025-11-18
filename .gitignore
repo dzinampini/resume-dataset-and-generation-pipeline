@@ -1,0 +1,8 @@
+.env
+json_merged/
+json_raw_text/
+json_raw_text_done/
+json_raw_text_in_progress/
+json_structured_no_text/
+json_structured/
+pdfs/

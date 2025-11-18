@@ -70,3 +70,6 @@ This is an organizational step. It checks the /pdfs folder for the original docu
 python 5.aggregate_data.py
 ```
 The final step collects all the individual merged files into a single, cohesive file that is structured as a JSON array you can now use in your experiments.
+
+## Cite this Work
+C. Chipfumbu, M. Giyane, D. Mpini, T. Dumani, and C. Magidi, "Resume Dataset with Generation Pipeline". Zenodo, Nov. 18, 2025. doi: 10.5281/zenodo.17639095.
